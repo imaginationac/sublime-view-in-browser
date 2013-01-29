@@ -87,7 +87,7 @@ class ViewInBrowserCommand(sublime_plugin.TextCommand):
 			webbrowser.open_new_tab(fileToOpen.encode())
 
 	def _loadSettings(self):
-		settingsFile = os.path.normpath("%s/settings.json" % PLUGIN_DIRECTORY)
+		settingsFile = os.path.normpath("%s/View in Browser.sublime-settings" % PLUGIN_DIRECTORY)
 		self._browserCommand = ""
 		
 		if os.path.exists(settingsFile):
